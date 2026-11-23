@@ -1,5 +1,5 @@
 # EX No.4.2. CUT SECTION OF SOLIDS
-## DATE:
+## DATE:17-11-2026
 
 ## AIM: 
 To create the solid model from given drawing and section the solid model
@@ -11,37 +11,54 @@ To create the solid model from given drawing and section the solid model
 4. 2.5 Mbps or faster download; 500 Kbps or faster upload 
 
 ## PROCEDURE:
-1.	Open new file and then select sketch icon.
-2.	Select the plane for sketching. 
-3.	Use sketching features (line, circle, arc, rectangle, polygon, etc.,) to draw the given sketch
+STEP 1 : Set Up the Sketch : 
 
-![image](https://user-images.githubusercontent.com/113594316/198826239-a3d6ffd5-d409-46b0-ba88-3312e89e9834.png)
+•Open Fusion 360 and set the document units to millimetres (mm)
+•Click Create Sketch and select the XY (Front) Plane
+•The vertical Y-axis is the axis of revolution. Draw the profile on the left side of it (negative X), as shown in the sketch. 
 
-4.	Use sketch modifying features (cut, trim, mirror, move, etc.,) to edit the sketch.
+<img width="279" height="556" alt="Screenshot 2026-11-23 131820" src="https://github.com/user-attachments/assets/8f02a5eb-3abe-45a1-8457-07528d0376c6" />
 
-![image](https://user-images.githubusercontent.com/113594316/198826244-f377f387-16af-4f89-a57d-1808083ce178.png)
+STEP 2 : Sketch the Base and Stem : 
 
-5.	Use inspect feature to measure the dimensions of sketch.
+•Draw a horizontal line from the origin to the left, 1.366 mm long. This is the bottom of the base. 
+•From the left end of this line, draw a sloping line up to the stem. The base is 0.148 mm thick at the stem and tapers to a sharp edge at the outer end. 
+•Draw the stem outer line vertically, 0.123 mm to the left of the Y-axis. 
+•Draw a vertical line on the Y-axis from the origin up to 1.501 mm. The 0.123 mm gap between this line and the stem outer line is the stem radius. 
 
-![image](https://user-images.githubusercontent.com/113594316/198826250-0e2f4985-18d7-4a07-8b1e-9c9fab11ea41.png)
+STEP 3 : Sketch the Bowl Walls : 
+•Use Create > Arc > Center Point Arc. Place the common centre point 0.721 mm to the right of the Y-axis and 1.986 mm above the 1.501 mm level. 
+•Draw the inner arc of R 2.113 mm starting from the top of the Y-axis line (1.501 mm level) and curving up and to the left.
+•Draw the outer arc of R 2.261 mm from the same centre, starting at the top of the stem outer line. 
+•End both arcs at the rim height of 3.520 mm above the bottom line.
+•Close the rim with a short horizontal line of 0.148 mm (wall thickness) between the two arc ends. 
+•Join the small gap at the stem top with a short line so that the profile is one closed loop. Trim the extra segments.
 
-6.	After finishing the sketch use finish sketch option to finalize the sketch.
+<img width="217" height="371" alt="Screenshot 2026-11-23 131934" src="https://github.com/user-attachments/assets/d0b1944b-d0c4-4758-95b7-310fb04e09e6" />
 
-![image](https://user-images.githubusercontent.com/113594316/198826257-ccfcfd0c-040a-459e-bb9f-93c375f9177f.png)
+•Add the dimensions with the Sketch Dimension (D) tool until the sketch is fully constrained (black lines). 
 
-7.Use extrude option to convert 3D model from sketch
+STEP 4 : Revolve the Profile : 
+•Click Finish Sketch and select Create > Revolve. 
+•Select the closed profile and choose the Y-axis line as the Axis. • Set Angle to 360° and Operation to New Body, then click OK. The wine glass solid is formed.
 
-![image](https://user-images.githubusercontent.com/113594316/198826270-d55912b8-0a02-4b36-acb2-02e9b4b328fd.png)
+<img width="311" height="376" alt="Screenshot 2026-11-23 132200" src="https://github.com/user-attachments/assets/fcf1eeca-d898-4128-a633-962531a1847b" />
 
- 8.Use revolve option to convert 2D to 3D.
- 
- ![image](https://user-images.githubusercontent.com/113594316/198826282-7a4844a8-0cb2-4573-8940-9a60356b7d04.png)
+STEP 5 : Section the Model : 
+•Go to Inspect > Section Analysis, select the XY plane and keep the offset as 0. 
+•The cut through the centre shows the hollow bowl, the solid stem and the tapered base, matching the sketch. 
+•Optionally apply a glass appearance (Modify > Appearance) and capture the final model and section view.
+
 
 ## INPUT:
 
 ![image](https://user-images.githubusercontent.com/113594316/199409656-c021c100-857a-4ae4-9752-9ae59465c9c2.png)
 
 ## OUTPUT:
+
+<img width="816" height="614" alt="Screenshot 2026-11-23 131248" src="https://github.com/user-attachments/assets/c3b9fb7d-b03d-4600-89b4-ad291c61fd32" />
+
+<img width="1116" height="789" alt="Screenshot 2026-11-23 131405" src="https://github.com/user-attachments/assets/39603180-1688-416c-9ea7-24d026ff9cf7" />
 
 
 ## RESULT:
